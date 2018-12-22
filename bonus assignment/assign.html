@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</head>
+<script>
+    function check(){
+        document.getElementById('aa').innerHTML=document.myform.Book_title.value;
+        document.getElementById('bb').innerHTML=document.myform.Book_subtitle.value;
+        document.getElementById('cc').innerHTML=document.myform.Author_name.value;
+        document.getElementById("mo").style.backgroundColor =document.myform.Backgroundcolor.value;
+        document.getElementById('ee').innerHTML=document.myform.Publisher.value;
+        document.getElementById('ff').innerHTML=document.myform.publishing_year.value;
+    }
+</script>
+<style>
+    #a{
+        
+        margin-top:30px; 
+    }
+    #b{
+        margin-top:30px; 
+    }
+    #c{
+        margin-top:30px; 
+    }
+    #d{
+        margin-top:30px; 
+    }
+    #e{
+        margin-top:30px; 
+    }
+    #f{
+        margin-top:30px; 
+    }
+    #mo{
+        border-width:100px;
+        border-color:blue; 
+    }
+</style>
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">WELCOME</a>
+      </li></ul></nav>
+   <div class="row">
+        <div class="col">
+            <form name="myform">
+                <div id="a" class="row">
+                    <label class="col-lg-3 col-sm-5 col-md-4 col-5">Book title:</label>
+                    <input type="text" class="col-lg-9 col-sm-7 col-md-8 col-7 bg-info" placeholder="Book title" name="Book_title" value="Book title">
+                </div>
+                <div id="b" class="row">
+                    <label class="col-lg-3 col-sm-5 col-md-4 col-5">Book subtitle:</label>
+                    <input type="name" class="col-lg-9 col-sm-7 col-md-8 col-7 bg-info"  placeholder="Book subtitle" name="Book_subtitle">
+                </div>
+                <div id="c" class="row">
+                        <label class="col-lg-3 col-sm-5 col-md-4 col-5" >Author name:</label>
+                        <input type="name" class="col-lg-9 col-sm-7 col-md-8 col-7 bg-info" placeholder="Author name" name="Author_name">
+                </div>
+                <div id="d" class="row">
+                        <label class="col-lg-3 col-sm-5 col-md-4 col-5">Background color:</label>
+                        <input type="name" class="col-lg-9 col-sm-7 col-md-8 col-7 bg-info"  placeholder="Background color" name="Backgroundcolor" value="Background_color">
+                </div>
+                <div id="e" class="row">
+                        <label class="col-lg-3 col-sm-5 col-md-4 col-5">Publisher:</label>
+                        <input type="name" class="col-lg-9 col-sm-7 col-md-8 col-7 bg-info"  placeholder="Publisher" name="Publisher">
+                </div>
+                <div id="f" class="row">                        
+                    <label class="col-lg-3 col-sm-5 col-md-4 col-5">publishing year</label>
+                    <select class="col-lg-9 col-sm-7 col-md-8 col-7 bg-info" id="publishing year" name="publishing_year">
+                        <option>year</option>
+                        <option>1999</option>
+                        <option>1997</option>
+                        <option>1996</option>
+                        <option>1995</option>
+                        <option>1994</option>
+                        <option>1993</option>
+                        <option>1992</option>
+                        
+                        
+                    </select>
+                </div>
+                <button style="margin-top:40px;margin-left:200px;" onclick='check();return false' type="submit" class="btn btn-primary">Submit</button>
+            </form>       
+         </div>
+        <div id="mo" class="col border border-dark mt-4 ml-4 mr-4">
+           <h3 class="same" id="aa" style="margin-left:250px;margin-top:30px;"></h3>
+           <h4 class="same" id="bb" style="margin-left:290px;margin-top:30px;"></h4>
+           <h5 class="same" id="cc" style="margin-left:150px;margin-top:30px;"></h5>
+           <p class="same" id="dd"></p>
+           <h5 class="same" id="ee" style="margin-left:500px;margin-top:180px;"></h5>
+           <h5 class="same" id="ff" style="margin-left:500px;"></h5>
+
+        </div>
+   </div>
+</body>
+</html>
